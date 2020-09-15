@@ -1,0 +1,18 @@
+#admin-login {
+    padding: 20px;
+    width: 40%;
+    background-color: #fe6e00;
+    display: block;
+    margin: auto;
+    margin-top: 250px;
+}
+
+input[name='username'] {
+    margin-bottom: 15px;
+}
+
+#admin-submit {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
