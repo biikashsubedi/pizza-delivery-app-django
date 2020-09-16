@@ -44,3 +44,6 @@ def addpizza(request):
 def deletepizza(request, pizzapk):
     PizzaModel.objects.filter(id=pizzapk).delete()
     return redirect('adminhomepage')
+
+def homepage(request):
+    return render(request, 'pizzaapp/homepage.html')

@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Welcome Pizza House</a>
+
+        <div class="collapse navbar-collapse">
+        </div>
+        <a class="navbar-brand  btn btn-danger float-right" href="/admin/">Login</a>
+    </nav>
+{#    <img src="{% static "img/pizza.jpg" %}" alt="My image">#}
+    
+
+    <div class="container-fluid" style="position: relative; height: 725px; background-size: cover; background-image: url({% static "img/pizza.jpg" %});">
+        <div class="container"
+             style="position: absolute; top: 50px; right: 50px; width: 450px; height: 370px; background-color: #fe6e00; padding: 40px; ">
+            <h2 class="text-center"><strong>Sign Up</strong></h2>
+            <form action="" method="post">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Choose Username" name="username">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="Choose Password" name="password">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Add Phone Number" name="phone">
+                    <small class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-lg btn-primary form-control" type="submit">
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+
+{% endblock %}
